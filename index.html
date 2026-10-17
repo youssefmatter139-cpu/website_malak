@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#7b294c" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>For Malak 💖 | Happy Birthday</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Great+Vibes&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="effects-on locked">
+  <div class="ambient" aria-hidden="true"></div>
+  <canvas id="sparkleCanvas" aria-hidden="true"></canvas>
+  <div class="floating-decor decor-heart heart-one" aria-hidden="true">💗</div>
+  <div class="floating-decor decor-heart heart-two" aria-hidden="true">💖</div>
+  <div class="floating-decor decor-bear bear-left" aria-hidden="true">🧸</div>
+  <div class="floating-decor decor-bear bear-right" aria-hidden="true">🧸</div>
+
+  <section id="lockScreen" class="lock-screen" aria-labelledby="lockTitle">
+    <div class="lock-card glass">
+      <div class="lock-emblem">🔐<span>💗</span></div>
+      <p class="eyebrow">A LITTLE SECRET, JUST FOR YOU</p>
+      <h1 id="lockTitle">A key to my heart</h1>
+      <p class="lock-copy">Enter your special date to unlock your surprise ✨</p>
+      <form id="birthdateForm" autocomplete="off">
+        <label class="date-label" for="birthDay">THE FIRST DAY OF YOUR LIFE</label>
+        <div class="date-inputs">
+          <input id="birthDay" inputmode="numeric" pattern="[0-9]*" maxlength="2" placeholder="DD" aria-label="Day" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" required />
+          <span>/</span>
+          <input id="birthMonth" inputmode="numeric" pattern="[0-9]*" maxlength="2" placeholder="MM" aria-label="Month" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" required />
+          <span>/</span>
+          <input id="birthYear" inputmode="numeric" pattern="[0-9]*" maxlength="4" placeholder="YYYY" aria-label="Year" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" required />
+        </div>
+        <button class="primary-btn unlock-btn" type="submit">♡ Unlock my surprise</button>
+        <p id="lockMessage" class="form-message" role="status">Hint: the day you were born 💌</p>
+      </form>
+      <div class="tiny-note">made with all my love · for Malak</div>
+    </div>
+  </section>
+
+  <main id="mainSite" class="site-shell" inert>
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Malak home">Malak <span>💖👑</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#letter">Our Letter</a>
+        <a href="#memories">Our Memories</a>
+        <a href="#music">Our Song</a>
+      </nav>
+    
+      <label class="toggle-pill"><span>✨ Effects</span><input id="effectsToggle" type="checkbox" checked><span class="toggle-ui"></span></label>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="hero-kicker">A DAY AS BEAUTIFUL AS YOU</div>
+      <h1>Happy Birthday, <span>My Favorite Person!</span> ✨</h1>
+      <p lang="ar" dir="rtl">كل سنة وإنتِ أجمل حكايه في حياتي يا لوكا❤️</p>
+      <div class="hero-divider"><span>♡</span></div>
+    </section>
+
+    <section class="content-grid">
+      <article id="letter" class="letter-panel glass">
+        <div class="section-heading">
+          <span class="heading-icon">💌</span>
+          <div><p class="eyebrow">A LETTER FROM MY HEART</p><h2>For my Malak</h2></div>
+        </div>
+        <button id="envelope" class="envelope" aria-label="Open the birthday letter">
+          <span class="envelope-flap"></span>
+          <span class="envelope-heart">♡</span>
+          <span class="envelope-hint">tap to open</span>
+        </button>
+        <div id="letterContent" class="letter-content">
+          <div class="letter-paper">
+            <div class="stamp">💗<small>LOVE</small></div>
+            <h3>💗 Happy Birthday, My Favorite Person 🎂✨</h3>
+            <p lang="ar" dir="rtl">كل سنة وإنتِ أجمل حاجة حصلتلي، وكل سنة وإنتِ منورة حياتي بضحكتك ووجودك يا حبيبتي 🥹❤️</p>
+            <p lang="ar" dir="rtl">يمكن الكلام مهما كان حلو مش هيقدر يوصف إنتِ غالية عندي قد إيه، بس أنا حابب أقولك إن وجودك في حياتي حاجة بفرح بيها كل يوم، وإن كل صورة لينا وراها ذكرى حلوة بتمنى تفضل معايا العمر كله. 🫂💕</p>
+            <p lang="ar" dir="rtl">في يوم ميلادك، أتمنى أشوفك دايمًا مبسوطة، وضحكتك متفارقش وشك، وكل أحلامك تتحقق، وأكون دايمًا سبب في فرحتك ولو بحاجة بسيطة. 🎀</p>
+            <p class="letter-highlight">You are not just my love, you are my favorite part of life. ❤️</p>
+            <p lang="ar" dir="rtl">بحبك في أيامك الحلوة، وفي الأيام اللي بتكون صعبة عليكي، وهفضل أتمنى ليكي كل الخير والفرحة اللي تستاهليها.</p>
+            <p lang="ar" dir="rtl">النهارده مش مجرد عيد ميلادك، ده يوم اتولدت فيه واحدة بقت بالنسبالي شخص مميز جدًا. 🥹💗</p>
+            <p class="letter-highlight">Happy Birthday, my girl. 🎂👑</p>
+            <p class="letter-signoff" lang="ar" dir="rtl">بحبك أوي، وإن شاء الله كل سنة جاية تكون أحلى من اللي قبلها، ونفضل نعمل ذكريات جديدة نحطها جنب الصور دي. ❤️♾️ <span>♡</span></p>
+          </div>
+        </div>
+        <button id="readMoreBtn" class="secondary-btn" type="button">Read More 💌</button>
+      </article>
+
+      <article id="memories" class="memory-panel glass">
+        <div class="section-heading">
+          <span class="heading-icon">📖</span>
+          <div><p class="eyebrow">LITTLE MOMENTS, BIG FEELINGS</p><h2>our memories <span class="pink">♡</span></h2></div>
+        </div>
+        <div class="scrapbook-wrap">
+          <div class="scrapbook" id="scrapbook" tabindex="0" aria-label="Interactive memory book">
+            <div class="book-spine" aria-hidden="true"></div>
+            <div class="book-pages-container" id="bookPages">
+              <!-- Page 1 -->
+              <section class="book-page active" data-page="1">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_1.jpg" alt="Memory 1" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">Sweet moments with you 🥤✨</h4>
+                  <p class="photo-sub">كل خطوة معاكي حكاية وذكرى حلوة في قلبي ❤️</p>
+                </div>
+                <span class="sticker sticker-top">🥤</span>
+                <span class="sticker sticker-bottom">💗</span>
+                <span class="page-number">— 1 —</span>
+              </section>
+
+              <!-- Page 2 -->
+              <section class="book-page" data-page="2">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_2.jpg" alt="Memory 2" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">ضحكتك بتنوّر كل أيامي 🥹❤️</h4>
+                  <p class="photo-sub">My favorite smile in the whole world ♡</p>
+                </div>
+                <span class="sticker sticker-top">✨</span>
+                <span class="sticker sticker-bottom">💖</span>
+                <span class="page-number">— 2 —</span>
+              </section>
+
+              <!-- Page 3 -->
+              <section class="book-page" data-page="3">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_3.jpg" alt="Memory 3" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">Always Better Together 🤍✨</h4>
+                  <p class="photo-sub">أجمل اتنين وأحلى روحين في الدنيا ♡</p>
+                </div>
+                <span class="sticker sticker-top">👑</span>
+                <span class="sticker sticker-bottom">💗</span>
+                <span class="page-number">— 3 —</span>
+              </section>
+
+              <!-- Page 4 -->
+              <section class="book-page page-chat" data-page="4">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame frame-chat">
+                  <img src="assets/images/memory_4.jpg" alt="Memory 4" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">أغلى كلام من أغلى قلب 💌</h4>
+                  <p class="photo-sub">كلامك بيطمن قلبي ويفرحني كل يوم 💞</p>
+                </div>
+                <span class="sticker sticker-top">💌</span>
+                <span class="sticker sticker-bottom">💖</span>
+                <span class="page-number">— 4 —</span>
+              </section>
+
+              <!-- Page 5 -->
+              <section class="book-page" data-page="5">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_5.jpg" alt="Memory 5" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">Forever &amp; Always, My Malak 🌙✨</h4>
+                  <p class="photo-sub">حكايتنا الحلوة اللي ملهاش نهاية في قلبي ♡</p>
+                </div>
+                <span class="sticker sticker-top">⭐</span>
+                <span class="sticker sticker-bottom">🧸</span>
+                <span class="page-number">— 5 —</span>
+              </section>
+
+              <!-- Page 6 -->
+              <section class="book-page" data-page="6">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_6.jpg" alt="Memory 6" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">إيدك في إيدي للأبد 🤝❤️</h4>
+                  <p class="photo-sub">Holding your hand feels like home ♡</p>
+                </div>
+                <span class="sticker sticker-top">🤝</span>
+                <span class="sticker sticker-bottom">💗</span>
+                <span class="page-number">— 6 —</span>
+              </section>
+
+              <!-- Page 7 -->
+              <section class="book-page" data-page="7">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_7.jpg" alt="Memory 7" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">حتى في الزحمة مفيش غيرك في عيني ✨</h4>
+                  <p class="photo-sub">Lost in the moment with you ♡</p>
+                </div>
+                <span class="sticker sticker-top">💫</span>
+                <span class="sticker sticker-bottom">💖</span>
+                <span class="page-number">— 7 —</span>
+              </section>
+
+              <!-- Page 8 -->
+              <section class="book-page" data-page="8">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_8.jpg" alt="Memory 8" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">أحلى شياكة وأجمل ضحكة 🦋✨</h4>
+                  <p class="photo-sub">Matching vibes &amp; sweet memories ♡</p>
+                </div>
+                <span class="sticker sticker-top">🦋</span>
+                <span class="sticker sticker-bottom">🤍</span>
+                <span class="page-number">— 8 —</span>
+              </section>
+
+              <!-- Page 9 -->
+              <section class="book-page" data-page="9">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_9.jpg" alt="Memory 9" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">وردة لـ أجمل وردة في حياتي 🌹✨</h4>
+                  <p class="photo-sub">You deserve all the flowers in the world ♡</p>
+                </div>
+                <span class="sticker sticker-top">🌹</span>
+                <span class="sticker sticker-bottom">👑</span>
+                <span class="page-number">— 9 —</span>
+              </section>
+
+              <!-- Page 10 -->
+              <section class="book-page" data-page="10">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_10.jpeg" alt="Memory 10" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">أحلى شياكة وأجمل ضحكة 🦋✨</h4>
+                  <p class="photo-sub">Matching vibes &amp; sweet memories ♡</p>
+                </div>
+                <span class="sticker sticker-top">🦋</span>
+                <span class="sticker sticker-bottom">🤍</span>
+                <span class="page-number">— 10 —</span>
+              </section>
+
+              <!-- Page 11 -->
+              <section class="book-page" data-page="11">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_11.jpeg" alt="Memory 11" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">ضحكة تفتح النفس وتنور الدنيا 🌟🤍</h4>
+                  <p class="photo-sub">Pure joy &amp; happiness ♡</p>
+                </div>
+                <span class="sticker sticker-top">🌟</span>
+                <span class="sticker sticker-bottom">🤍</span>
+                <span class="page-number">— 11 —</span>
+              </section>
+
+              <!-- Page 12 -->
+              <section class="book-page" data-page="12">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_12.jpeg" alt="Memory 12" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">جمال مالوش مثيل ولا يوصف بكلام 🌸✨</h4>
+                  <p class="photo-sub">Truly one of a kind ♡</p>
+                </div>
+                <span class="sticker sticker-top">🌸</span>
+                <span class="sticker sticker-bottom">💕</span>
+                <span class="page-number">— 12 —</span>
+              </section>
+
+              <!-- Page 13 -->
+              <section class="book-page" data-page="13">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_13.jpeg" alt="Memory 13" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">حكايات وذكريات تفضل محفورة في القلب 📖💖</h4>
+                  <p class="photo-sub">Unforgettable memories ♡</p>
+                </div>
+                <span class="sticker sticker-top">📜</span>
+                <span class="sticker sticker-bottom">❤️</span>
+                <span class="page-number">— 13 —</span>
+              </section>
+
+              <!-- Page 14 -->
+              <section class="book-page" data-page="14">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_14.jpeg" alt="Memory 14" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">حضورك دايماً بيدي للمكان بهجة وروح 🌈✨</h4>
+                  <p class="photo-sub">Bringing light everywhere ♡</p>
+                </div>
+                <span class="sticker sticker-top">🌈</span>
+                <span class="sticker sticker-bottom">✨</span>
+                <span class="page-number">— 14 —</span>
+              </section>
+
+              <!-- Page 15 -->
+              <section class="book-page" data-page="15">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_41.jpeg" alt="Memory 15" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">العيون التي تنطق دفء ومحبة 👁️✨</h4>
+                  <p class="photo-sub">Eyes full of warmth ♡</p>
+                </div>
+                <span class="sticker sticker-top">🦋</span>
+                <span class="sticker sticker-bottom">💖</span>
+                <span class="page-number">— 15 —</span>
+              </section>
+
+              <!-- Page 16 -->
+              <section class="book-page" data-page="16">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_15.jpeg" alt="Memory 16" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">الشياكة والأناقة في أبهى صورها 💎👑</h4>
+                  <p class="photo-sub">Elegance at its best ♡</p>
+                </div>
+                <span class="sticker sticker-top">💎</span>
+                <span class="sticker sticker-bottom">👑</span>
+                <span class="page-number">— 16 —</span>
+              </section>
+
+              <!-- Page 17 -->
+              <section class="book-page" data-page="17">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_16.jpeg" alt="Memory 17" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">يخليلي اللحظات الجمال دي معاك 📸💫</h4>
+                  <p class="photo-sub">Cherishing every second ♡</p>
+                </div>
+                <span class="sticker sticker-top">📸</span>
+                <span class="sticker sticker-bottom">💫</span>
+                <span class="page-number">— 17 —</span>
+              </section>
+
+              <!-- Page 18 -->
+              <section class="book-page" data-page="18">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_17.jpeg" alt="Memory 18" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">سر السعادة في تفاصيل بسيطة حلوة 🌻💛</h4>
+                  <p class="photo-sub">Sunshine in human form ♡</p>
+                </div>
+                <span class="sticker sticker-top">🌻</span>
+                <span class="sticker sticker-bottom">💛</span>
+                <span class="page-number">— 18 —</span>
+              </section>
+
+              <!-- Page 19 -->
+              <section class="book-page" data-page="19">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_18.jpeg" alt="Memory 19" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">الأناقة هيبة والتواضع سر الحلاوة 🌸🤍</h4>
+                  <p class="photo-sub">Graceful &amp; sweet ♡</p>
+                </div>
+                <span class="sticker sticker-top">🌸</span>
+                <span class="sticker sticker-bottom">🤍</span>
+                <span class="page-number">— 19 —</span>
+              </section>
+
+              <!-- Page 20 -->
+              <section class="book-page" data-page="20">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_19.jpeg" alt="Memory 20" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">كل صورة ليها حكاية وأنت أحلى ما فيها 🎨💖</h4>
+                  <p class="photo-sub">The highlight of my world ♡</p>
+                </div>
+                <span class="sticker sticker-top">🎨</span>
+                <span class="sticker sticker-bottom">💕</span>
+                <span class="page-number">— 20 —</span>
+              </section>
+
+              <!-- Page 21 -->
+              <section class="book-page" data-page="21">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_20.jpeg" alt="Memory 21" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">طاقة إيجابية وراحة نفسية مالهاش حدود 🍃✨</h4>
+                  <p class="photo-sub">Peaceful vibes only ♡</p>
+                </div>
+                <span class="sticker sticker-top">🍃</span>
+                <span class="sticker sticker-bottom">✨</span>
+                <span class="page-number">— 21 —</span>
+              </section>
+
+              <!-- Page 22 -->
+              <section class="book-page" data-page="22">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_21.jpeg" alt="Memory 22" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">القلوب الطيبة تلمع في العيون دايماً 💎💗</h4>
+                  <p class="photo-sub">Pure gold inside out ♡</p>
+                </div>
+                <span class="sticker sticker-top">💎</span>
+                <span class="sticker sticker-bottom">💗</span>
+                <span class="page-number">— 22 —</span>
+              </section>
+
+              <!-- Page 23 -->
+              <section class="book-page" data-page="23">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_22.jpeg" alt="Memory 23" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">أحلى روقان وأجمل أوقات بتمضي ☕✨</h4>
+                  <p class="photo-sub">Cozy vibes &amp; good times ♡</p>
+                </div>
+                <span class="sticker sticker-top">☕</span>
+                <span class="sticker sticker-bottom">✨</span>
+                <span class="page-number">— 23 —</span>
+              </section>
+
+              <!-- Page 24 -->
+              <section class="book-page" data-page="24">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_23.jpeg" alt="Memory 24" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">ابتسامة واحدة منك تكفي تغير المود ☀️💛</h4>
+                  <p class="photo-sub">Brightening up my days ♡</p>
+                </div>
+                <span class="sticker sticker-top">☀️</span>
+                <span class="sticker sticker-bottom">💛</span>
+                <span class="page-number">— 24 —</span>
+              </section>
+
+              <!-- Page 25 -->
+              <section class="book-page" data-page="25">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_24.jpeg" alt="Memory 25" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">ملامح هادية وروح زي الفل 🕊️🤍</h4>
+                  <p class="photo-sub">Gentle soul &amp; sweet heart ♡</p>
+                </div>
+                <span class="sticker sticker-top">🕊️</span>
+                <span class="sticker sticker-bottom">🤍</span>
+                <span class="page-number">— 25 —</span>
+              </section>
+
+              <!-- Page 26 -->
+              <section class="book-page" data-page="26">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_25.jpeg" alt="Memory 26" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">الأيام الجاية أحلى وأنت في وسطها 🍀✨</h4>
+                  <p class="photo-sub">Better days with you ♡</p>
+                </div>
+                <span class="sticker sticker-top">🍀</span>
+                <span class="sticker sticker-bottom">✨</span>
+                <span class="page-number">— 26 —</span>
+              </section>
+
+              <!-- Page 27 -->
+              <section class="book-page" data-page="27">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_26.jpeg" alt="Memory 27" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">بساطة وجمال يخطفوا القلب من أول نظرة 🌷💖</h4>
+                  <p class="photo-sub">Simply captivating ♡</p>
+                </div>
+                <span class="sticker sticker-top">🌷</span>
+                <span class="sticker sticker-bottom">💖</span>
+                <span class="page-number">— 27 —</span>
+              </section>
+
+              <!-- Page 28 -->
+              <section class="book-page" data-page="28">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_27.jpeg" alt="Memory 28" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">شياكة وإطلالة تميزك عن الكل ✨👗</h4>
+                  <p class="photo-sub">Standing out gracefully ♡</p>
+                </div>
+                <span class="sticker sticker-top">✨</span>
+                <span class="sticker sticker-bottom">💕</span>
+                <span class="page-number">— 28 —</span>
+              </section>
+
+              <!-- Page 29 -->
+              <section class="book-page" data-page="29">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_28.jpeg" alt="Memory 29" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">الضحكة دي لازم تتحفظ في فريم لوحدها 🖼️❤️</h4>
+                  <p class="photo-sub">Frame-worthy smiles ♡</p>
+                </div>
+                <span class="sticker sticker-top">🖼️</span>
+                <span class="sticker sticker-bottom">❤️</span>
+                <span class="page-number">— 29 —</span>
+              </section>
+
+              <!-- Page 30 -->
+              <section class="book-page" data-page="30">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_29.jpeg" alt="Memory 30" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">ذكريات تفضل عايشة معانا للثانية الأخيرة ⏳💕</h4>
+                  <p class="photo-sub">Timeless moments ♡</p>
+                </div>
+                <span class="sticker sticker-top">⏳</span>
+                <span class="sticker sticker-bottom">💕</span>
+                <span class="page-number">— 30 —</span>
+              </section>
+
+              <!-- Page 31 -->
+              <section class="book-page" data-page="31">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_30.jpeg" alt="Memory 31" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">صاحب الروح الحلوة والقلب الطيب 🤍✨</h4>
+                  <p class="photo-sub">Sweetest heart ever ♡</p>
+                </div>
+                <span class="sticker sticker-top">🤍</span>
+                <span class="sticker sticker-bottom">✨</span>
+                <span class="page-number">— 31 —</span>
+              </section>
+
+              <!-- Page 32 -->
+              <section class="book-page" data-page="32">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_31.jpeg" alt="Memory 32" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">إطلالة ملوكي وشخصية تتسجل في التاريخ 👑🌟</h4>
+                  <p class="photo-sub">Royalty vibes ♡</p>
+                </div>
+                <span class="sticker sticker-top">👑</span>
+                <span class="sticker sticker-bottom">🌟</span>
+                <span class="page-number">— 32 —</span>
+              </section>
+
+              <!-- Page 33 -->
+              <section class="book-page" data-page="33">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_32.jpeg" alt="Memory 33" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">بهجة وضحك ومود ملوش حل 🎉💛</h4>
+                  <p class="photo-sub">Pure laughter &amp; fun ♡</p>
+                </div>
+                <span class="sticker sticker-top">🎉</span>
+                <span class="sticker sticker-bottom">💛</span>
+                <span class="page-number">— 33 —</span>
+              </section>
+
+              <!-- Page 34 -->
+              <section class="book-page" data-page="34">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_33.jpeg" alt="Memory 34" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">حضورك طاغي وبيسيب أثر جميل في أي مكان 🦋✨</h4>
+                  <p class="photo-sub">A glowing presence ♡</p>
+                </div>
+                <span class="sticker sticker-top">🦋</span>
+                <span class="sticker sticker-bottom">✨</span>
+                <span class="page-number">— 34 —</span>
+              </section>
+
+              <!-- Page 35 -->
+              <section class="book-page" data-page="35">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_34.jpeg" alt="Memory 35" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">من أجمل الصور اللي تبث الدفء والراحة 🔥🤍</h4>
+                  <p class="photo-sub">Warm &amp; cozy feel ♡</p>
+                </div>
+                <span class="sticker sticker-top">🔥</span>
+                <span class="sticker sticker-bottom">🤍</span>
+                <span class="page-number">— 35 —</span>
+              </section>
+
+              <!-- Page 36 -->
+              <section class="book-page" data-page="36">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_35.jpeg" alt="Memory 36" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">روحك الحلوة ظاهرة في كل كادر ولقطة 📸💖</h4>
+                  <p class="photo-sub">Glowing from within ♡</p>
+                </div>
+                <span class="sticker sticker-top">📸</span>
+                <span class="sticker sticker-bottom">💖</span>
+                <span class="page-number">— 36 —</span>
+              </section>
+
+              <!-- Page 37 -->
+              <section class="book-page" data-page="37">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_36.jpeg" alt="Memory 37" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">جمال لا يذبل وبسمة ترد الروح 🌸✨</h4>
+                  <p class="photo-sub">Endless charm ♡</p>
+                </div>
+                <span class="sticker sticker-top">🌸</span>
+                <span class="sticker sticker-bottom">✨</span>
+                <span class="page-number">— 37 —</span>
+              </section>
+
+              <!-- Page 38 -->
+              <section class="book-page" data-page="38">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_37.jpeg" alt="Memory 38" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">دايماً متألق ومختلف بطريقتك الخاصة ⭐💖</h4>
+                  <p class="photo-sub">Shining in your own way ♡</p>
+                </div>
+                <span class="sticker sticker-top">⭐</span>
+                <span class="sticker sticker-bottom">💕</span>
+                <span class="page-number">— 38 —</span>
+              </section>
+
+              <!-- Page 39 -->
+              <section class="book-page" data-page="39">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_38.jpeg" alt="Memory 39" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">الصحبة الحلوة واللقطات السعيدة 🥂✨</h4>
+                  <p class="photo-sub">Best moments together ♡</p>
+                </div>
+                <span class="sticker sticker-top">🥂</span>
+                <span class="sticker sticker-bottom">✨</span>
+                <span class="page-number">— 39 —</span>
+              </section>
+
+              <!-- Page 40 -->
+              <section class="book-page" data-page="40">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_39.jpeg" alt="Memory 40" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">أروع طلّة وأحلى كاريزما ✨😎</h4>
+                  <p class="photo-sub">Unstoppable charisma ♡</p>
+                </div>
+                <span class="sticker sticker-top">😎</span>
+                <span class="sticker sticker-bottom">✨</span>
+                <span class="page-number">— 40 —</span>
+              </section>
+
+              <!-- Page 41 -->
+              <section class="book-page" data-page="41">
+                <div class="tape tape-center"></div>
+                <div class="photo-frame">
+                  <img src="assets/images/memory_40.jpeg" alt="Memory 41" loading="lazy">
+                </div>
+                <div class="page-content">
+                  <h4 class="photo-caption" lang="ar" dir="rtl">ختامها مسك وأجمل ذكرى تتسجل في ألبوم العمر 🏆💖</h4>
+                  <p class="photo-sub">The perfect ending ♡</p>
+                </div>
+                <span class="sticker sticker-top">🏆</span>
+                <span class="sticker sticker-bottom">💖</span>
+                <span class="page-number">— 41 —</span>
+              </section>
+
+            </div>
+            <div class="flip-hint" aria-hidden="true"><span>👈 اسحب لتقليب الصفحة 👉</span></div>
+          </div>
+          <div class="book-controls">
+            <button id="prevPage" class="round-btn" aria-label="Previous page">←</button>
+            <div class="page-indicator">
+              <span id="pageLabel">MEMORY BOOK · 01 / 41</span>
+              <div class="page-dots" id="pageDots" aria-hidden="true"></div>
+            </div>
+            <button id="nextPage" class="round-btn" aria-label="Next page">→</button>
+          </div>
+        </div>
+
+        <div class="add-memory-grid">
+          <label class="add-slot" for="photoUpload">
+            <span class="add-symbol">＋</span><b>Add Photo to Book 📖</b><small>Adds a new page directly to the book</small>
+            <input id="photoUpload" type="file" accept="image/*" multiple hidden>
+          </label>
+          <label class="add-slot" for="videoUpload">
+            <span class="add-symbol">▶</span><b>Add Video Page 🎬</b><small>Adds a video page into the book</small>
+            <input id="videoUpload" type="file" accept="video/*" hidden>
+          </label>
+        </div>
+      </article>
+    </section>
+
+    <section class="bottom-grid">
+      <article id="music" class="music-panel glass">
+        <div class="album-art" aria-hidden="true">♫<span>♡</span></div>
+        <div class="music-info">
+          <p class="eyebrow">A SONG THAT FEELS LIKE US</p>
+          <h2>Play Our Song 🎵</h2>
+          <p id="trackName">Add your favorite song in assets/audio/our-song.mp3</p>
+          <audio id="audioPlayer" preload="metadata" playsinline webkit-playsinline src="assets/audio/our-song.mp3"></audio>
+          <div class="progress-row"><span id="currentTime">0:00</span><input id="musicProgress" type="range" min="0" max="100" value="0" aria-label="Song progress"><span id="duration">0:00</span></div>
+          <div class="player-controls">
+            <button id="restartBtn" class="icon-btn" aria-label="Restart song">↺</button>
+            <button id="playBtn" class="play-btn" aria-label="Play song">▶</button>
+            <label class="upload-song">＋ Add song<input id="audioUpload" type="file" accept="audio/*" hidden></label>
+          </div>
+        </div>
+      </article>
+      <article class="surprise-panel">
+        <div class="gift-illustration">🎁</div>
+        <div><p class="eyebrow">ONE MORE LITTLE THING</p><h2>A surprise for you</h2><p>Ready for a little birthday magic?</p></div>
+        <button id="surpriseBtn" class="primary-btn">Surprises 🎁</button>
+      </article>
+    </section>
+    <footer>Made with ♡ just for Malak <span>·</span> <button id="relockBtn">Lock again 🔐</button></footer>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
